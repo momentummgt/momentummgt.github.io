@@ -1,13 +1,13 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <style>
-  #us-map{
+  .container{
+    width: 100%;
     display: block;
-    position: absolute;
+  }
+  #us-map{
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
   }
   .current-state:hover, circle:hover {
     stroke: #ffffff !important;
@@ -48,6 +48,8 @@
   }
 </style>
 <div id="info-box"></div>
+<div class="container">
+<center>
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="us-map" preserveAspectRatio="xMinYMin meet" sodipodi:docname="Republican_Party_presidential_primaries_results,_2016.svg" inkscape:version="0.91 r13725" x="0px" y="0px" width="959px" height="593px" viewBox="174 100 959 593" enable-background="new 174 100 959 593" xml:space="preserve">
 <sodipodi:namedview bordercolor="#666666" objecttolerance="10" pagecolor="#ffffff" borderopacity="1" gridtolerance="10" guidetolerance="10" inkscape:cx="509.19152" inkscape:cy="282.2353" inkscape:zoom="1.2137643" showgrid="false" id="namedview71" inkscape:current-layer="g5" inkscape:window-maximized="1" inkscape:window-y="-8" inkscape:window-x="-8" inkscape:pageopacity="0" inkscape:window-height="1017" inkscape:window-width="1920" inkscape:pageshadow="2">
@@ -104,15 +106,11 @@
     <g id="DC">
         <path id="path58" fill="#D3D3D3" d="M975.8,353.8l-1.1-1.6l-1-0.8l1.1-1.6l2.2,1.5L975.8,353.8z"/>
         <circle id="circle60" data-info="<div>Washington DC</div>" fill="hsl(2, 65%, 49%)" stroke="#FFFFFF" stroke-width="1.5" cx="975.3" cy="351.8" r="5"/>
-    </g>
-    
-    
-    
-    
-    
+    </g> 
 </g>
-
 </svg>
+</center>
+</div>
 <script>
 $(".current-state, circle").hover(function(e) {
     $('#info-box').css('display','block');
