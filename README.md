@@ -1,2 +1,0 @@
-# momentummgt.github.io
-Map
